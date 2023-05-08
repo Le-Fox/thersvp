@@ -40,20 +40,25 @@ function RsvpFormComponent(){
   }
   const [navbar, setnavbar] = useState(false);
     return (
-    <div className="bg-green-700 items-center px-20">
-    <form onSubmit={handleSubmit}>
-        <div className="flex items-center justify-between">
-            <label htmlFor="Guest Name">Guest Name</label>
-            <input className="bg-black" type="text" id="first" name="first" required />
-        </div>
+    <div className="bg-green-700 text-center grid grid-cols-1 gap-3 border-2 border-red-600">
+      <form onSubmit={handleSubmit}>
+      {/* flex items-center  justify-center space-x-4 space-y-3 */}
+          <div className="grid grid-cols-2 gap-4  content-start">
+              <label htmlFor="Guest Name">Guest Name</label>
+              <input className="bg-black" type="text" id="first" name="first" required />
+          </div>
 
-        <div className="flex items-center justify-between">
-            <label htmlFor="Plus1 Name">Additional Guest</label>
-            <input className="bg-black" type="text" id="last" name="last" required />
-        </div>
+          <div className="grid grid-cols-2 gap-4 content-start ">
+              <label htmlFor="Plus1 Name">Additional Guest</label>
+              <input className="bg-black text-white" type="text" id="last" name="last" required />
+          </div>
+          <div className="grid grid-cols-2 gap-4 content-start">
+              <label htmlFor="Guest Email-address">Email-Address</label>
+              <input className="bg-black" type="Email" id="last" name="last" required />
+          </div>
 
-      <button className="" type="submit">Submit</button>
-    </form>
+        <button className="" type="submit">Submit</button>
+      </form>
     </div>
     )
 }
