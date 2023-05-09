@@ -1,9 +1,9 @@
 import Head from 'next/head'
-// import NavBarComponent from '@/components/NavBar'
-// import RsvpFormComponent from '@/components/RsvpForm'
+import NavBarComponent from '../components/NavBar'
+import RsvpFormComponent from '../components/RsvpForm'
 import { useState } from "react"
-import Button from '@/components/Button'
-import Hero from '@/components/Hero'
+import Button from '../components/Button'
+import Hero from '../components/Hero'
 
 export default function Home() {
   const [navbar, setnavbar] = useState(false);
