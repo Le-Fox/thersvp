@@ -2,8 +2,8 @@ import Head from 'next/head'
 // import NavBarComponent from './components/NavBar'
 // import RsvpFormComponent from './components/RsvpForm'
 import { useState } from "react"
-import Button from './components/Button'
-import Hero from './components/Hero';
+import Button from './components/button'
+import Hero from './components/hero';
 
 
 export default function Home() {
