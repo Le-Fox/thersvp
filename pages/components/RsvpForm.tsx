@@ -38,7 +38,6 @@ function RsvpFormComponent(){
     const result = await response.json()
     alert(`Is this your full name: ${result.data}`)
   }
-  const [navbar, setnavbar] = useState(false);
     return (
     <div className="bg-green-700 text-center grid grid-cols-1 gap-3 border-2 border-red-600">
       <form onSubmit={handleSubmit}>

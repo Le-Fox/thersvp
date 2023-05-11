@@ -1,13 +1,13 @@
 import Head from 'next/head'
 // import NavBarComponent from './components/NavBar'
-// import RsvpFormComponent from './components/RsvpForm'
+import RsvpFormComponent from './components/RsvpForm'
 import { useState } from "react"
 import Button from './components/button'
 import Hero from './components/hero';
 
 
 export default function Home() {
-  const [navbar, setnavbar] = useState(false);
+  const [isMid, setnavbar] = useState(false);
   return (
    <div className='bg-creamy-brown'>
       <Head>
@@ -16,13 +16,10 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/hand-in-hand.png" />
       </Head>
-
       <main className='snap-y snap-mandatory transition overflow-hidden'>
         {/* <NavBarComponent/>  */}
-        <section className=" text-kinda-black bg-repeat-x  bg-top bg-auto  bg-[url('../public/TightBackgroundImage.jpg')] lg:min-h-screen  snap-start z-20 flex  flex-col justify-center items-center">
-
+        <section className=" text-kinda-black bg-repeat-x  bg-top bg-auto bg-blend-soft-light  bg-[url('../public/TightBackgroundImage.jpg')] lg:min-h-screen  snap-start z-20 flex  flex-col justify-center items-center border-b-4 border-kinda-black">
             <Hero/>
-
           <div className='lg:px-44 flex  flex-col justify-start items-start'>
             <div className='text-left md:text-lg text-xl font-Mathanifo'>
               <p className='lg:pl-4 lg:m-4 mb-2'>26.09.14</p>
@@ -102,12 +99,7 @@ export default function Home() {
             </div>
 
             
-          </section>
-
-          <section>
-          {/* <RsvpFormComponent/> */}
-          </section>
-          
+          </section>          
         </div>
       </main>
     </div>
