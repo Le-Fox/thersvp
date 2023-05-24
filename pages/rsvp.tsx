@@ -32,8 +32,8 @@ function Rsvp({rsvpInput}: Props) {
    }
 
   return (
-    <div className='flex flex-col justify-center items-center content bg-creamy-brown min-h-screen min-w-full'>
-        <section className="text-kinda-black bg-repeat-x  bg-top bg-auto  bg-[url('../public/TightBackgroundImage.jpg')] lg:min-h-screen  snap-start z-20 flex  flex-col justify-center items-center w-screen">
+    <div className='flex flex-col justify-center items-center content bg-creamy-brown md:min-h-screen min-h-1/2 min-w-full'>
+        <section className="text-kinda-black bg-repeat-x  bg-top bg-auto  bg-[url('../public/TightBackgroundImage.jpg')] md:min-h-screen  snap-start z-20 flex  flex-col justify-center items-center w-screen">
             <Hero/>
           <div className='lg:px-44 flex  flex-col justify-center items-center'>
             <div className='text-left md:text-lg text-lg font-Mathanifo '>
@@ -45,11 +45,11 @@ function Rsvp({rsvpInput}: Props) {
           </div>
           
         </section>
-        <section className=" sm:min-h-1/2 min-h-screen min-w-full pt-5 bg-repeat-x  bg-bottom bg-auto  bg-[url('../public/TightBackgroundImageUpsideDown.png')] flex justify-center items-center">
-            <div className='sm:justify-between flex justify-center items-center mt-10 font-AddingtonT text-kinda-black '>
-                {/* <div className='text-left md:text-6xl sm:text-base lg:text-6xl font-Mathanifo flex justify-center items-center pt-2 pb-2'>
-                    <p className=''>RSVP</p>
-                </div> */}
+        <section className=" md:min-h-1/2 min-h-screen min-w-full pt-5 bg-repeat-x  bg-bottom md:bg-auto sm:bg-contain  lg:bg-[url('../public/TightBackgroundImageUpsideDown.png')] bg-[url('../public/TightBackgroundImageUpsideDownSmaller.png')]  flex justify-center md:items-center items-start">
+            <div className='flex flex-col justify-center items-center mt-10 font-AddingtonT text-kinda-black '>
+                <div className='text-left md:text-6xl text-4xl font-Mathanifo flex justify-center items-center lg:pb-6 pb-4'>
+                    <p className=''>Please Enter your details</p>
+                </div>
                   <Form  onSubmit={handleSubmit} className=' space-y-2'>
                     <Form.Group widths='equal' className=' flex-col space-y-2' >
                       <Form.Input label='Name'  name='name' placeholder='Name' onChange={handleChange}/>
